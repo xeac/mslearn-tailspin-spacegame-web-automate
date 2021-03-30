@@ -7,12 +7,16 @@ terraform {
     }
   }
 }
+provider "azurerm" {
+  features {}
+}
 variable "resource_group_name" {
   default = "tailspin-space-game-rg"
   description = "The name of the resource group"
 }
 
 variable "resource_group_location" {
+  default = "West US" 
   description = "The location of the resource group"
 }
 
