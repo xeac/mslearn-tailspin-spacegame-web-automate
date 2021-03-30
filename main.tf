@@ -22,6 +22,7 @@ variable "app_service_plan_name" {
 }
 
 variable "app_service_name_prefix" {
+  default = "tailspin-space-game-web"
   description = "The beginning part of your App Service host name"
 }
 
